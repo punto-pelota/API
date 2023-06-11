@@ -1,4 +1,3 @@
-import jmespath
 import requests
 import json
 
@@ -13,7 +12,7 @@ with open('json_data.json') as file:
 
 data = json.loads(json_data)
 
-max_fleet_age = float('-inf')  # Initialize with negative infinity
+max_fleet_age = float(0)
 selected_airline_name = ''
 
 for entry in data['data']:
